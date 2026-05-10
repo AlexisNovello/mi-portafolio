@@ -1,17 +1,52 @@
+import React from 'react'
+import { BiBriefcase, BiCode, BiHome, BiMailSend, BiRightArrowAlt } from 'react-icons/bi'
 
-function Navbar() {
-    return (
-        <nav className="flex justify-between p-2 bg-slate-500 shadow-md">
-            <div className="font-bold text-2xl pt-4 px-4">Mi portafolio</div>
-            <ul className="flex gap-2 text-xl">
-                <li><a href="#about" className="inline-block bg-slate-500 p-4 rounded hover:bg-slate-600 hover:scale-110 transition-all duration-300">Sobre mi</a></li>
-                <li><a href="#skills" className="inline-block bg-slate-500 p-4 rounded hover:bg-slate-600 hover:scale-110 transition-all duration-300">Habilidades</a></li>
-                <li><a href="#projects" className="inline-block bg-slate-500 p-4 rounded hover:bg-slate-600 hover:scale-110 transition-all duration-300">Proyectos</a></li>
-                <li><a href="#contact" className="inline-block bg-slate-500 p-4 rounded hover:bg-slate-600 hover:scale-110 transition-all duration-300">Contactos</a></li>
-            </ul>
-        </nav>
-    );
- 
+const Navbar = () => {
+  return (
+    <div className='md:flex-[1]'>
+
+      {/*Desktop navbar */}
+      <div className='min-h-screen top-0 hidden md:sticky md:flex
+      items-center justify-center bg-teal-600 text-white'>
+        <ul className='flex flex-col gap-10'>
+          {["Inicio", "Habilidades", "Proyectos", "Contacto"].map((item) => (
+            <li key={item} className='flex items-center justify-start
+            cursor-pointer font-medium transition-all duration-200
+            group sm:text-lg md:text-xl xl:text-3xl'>
+              <BiRightArrowAlt className='text-4xl -translate-x-5
+              opacity-0 transform transition-all duration-200
+              group-hover:opacity-100 group-hover:translate-x-0' />
+
+              <a href={`#${item}`} className='transition-all duration-200
+              hover:translate-x-3'>{item}</a>
+
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/*Movile navbar */}
+      <div className='fixed left-0 right-0 top-0 z-10 flex justify-evenly
+      bg-teal-600 p-5 text-white md:hidden'>
+        <a href='#Home' className='flex flex-col items-center justify-center'>
+          <BiHome className='text-2xl' />
+          <span className='text-xs'>Home</span>
+        </a>
+         <a href='#skills' className='flex flex-col items-center justify-center'>
+          <BiBriefcase className='text-2xl' />
+          <span className='text-xs'>Skills</span>
+        </a>
+         <a href='#projects' className='flex flex-col items-center justify-center'>
+          <BiCode className='text-2xl' />
+          <span className='text-xs'>Projects</span>
+        </a>
+         <a href='#contact' className='flex flex-col items-center justify-center'>
+          <BiMailSend className='text-2xl' />
+          <span className='text-xs'>Contact</span>
+        </a>
+      </div>
+    </div>
+  )
 }
 
-export default Navbar;
+export default Navbar

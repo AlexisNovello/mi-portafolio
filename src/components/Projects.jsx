@@ -1,41 +1,35 @@
-function Projects() {
-    const myProjects = [
-        {
-            title: "Gestion de Netbooks",
-            desc: "App de consola en C++ con validacion mediante regex y persistencia mediante archivos .txt",
-            tech: ["C++", "Regex"],
-            link: "#"
-        },
-        {
-            title: "To-Do List",
-            desc: "Gestor de tareas usando React, LocalStorage y Tailwind CSS",
-            tech: ["React","Tailwind","JS"],
-            link: "#"
-        }
-    ]
-    
-    return(
-        <section id="projects" className="py-20 px-20 bg-slate-800">
-            <div className="mx-auto">
-                <h2 className="text-3xl font-bold mb-10 text-center">Mis Proyectos</h2>
+import React from 'react'
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8">
-                        {myProjects.map((project, index) => (
-                            <div key={index} className="border p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                                <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-                                <p className="text-slate-220 mb-4 text-xl1">{project.desc}</p>
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.tech.map(t => (
-                                        <span className="bg-slate-100 text-slate-700 px-2 py-1 rounded text-xs font-bold">{t}</span>        
-                                    ))}
-                                </div>
-                                <a href={project.link} className="text-blue-600 font-medium hover:underline">Ver código</a>
-                            </div>
-                        ))}
-                    </div>
-            </div>
-        </section>
-    );
+const Projects = () => {
+  return (
+    <div id='Proyectos' className='min-h-screen w-full flex flex-col items-center
+    justify-center gap-20 p-10 md:p-16 xl:px-32'>
+      <h1 className='text-center text-5xl'>Proyectos</h1>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-5">
+
+        <div className="text-left space-y-2 border-2 hover:scale-105
+        transition-all duration-200 cursor-pointer px-8 py-10
+        border-teal-500 rounded-lg hover:bg-teal-50">
+          <h1 className='text-3xl font-semibold'>Project Name</h1>
+          <h3 className='text-xl text-gray-700'>Tecnologias utilizadas:</h3>
+          <p className='text-sm text-gray-600'>Descripcion del proyecto: Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown</p>
+        </div>
+
+        <div className="text-left space-y-2 border-2 hover:scale-105
+        transition-all duration-200 cursor-pointer px-8 py-10
+        border-teal-500 rounded-lg hover:bg-teal-50">
+          <h1 className='text-3xl font-semibold'>Project Name</h1>
+          <h3 className='text-xl text-gray-700'>Tecnologias utilizadas:</h3>
+          <p className='text-sm text-gray-600'>Descripcion del proyecto: Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown</p>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-export default Projects;
+export default Projects
