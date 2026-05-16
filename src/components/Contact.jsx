@@ -3,12 +3,12 @@ import React from 'react'
 const Contact = () => {
   return (
     <div id='Contacto' className='flex min-h-screen w-full flex-col items-center
-    justify-center gap-16 p-8 bg-background'>
-      <h1 className='text-center text-6xl font-light text-text'>Contacto</h1>
+    justify-center gap-16 pb-8 pt-20 bg-background'>
+      <h1 className='text-center text-6xl text-text'>Contacto</h1>
 
       <form action="https://formspree.io/f/xredzqwy"
       method='POST'
-      className='flex w-full max-w-md flex-col gap-8 rounded-lg p-6
+      className='flex w-full max-w-md flex-col gap-8 rounded-lg p-6 pt-0
       md:max-w-lg lg:max-w-xl'>
 
         <div className='flex flex-col gap-4'>

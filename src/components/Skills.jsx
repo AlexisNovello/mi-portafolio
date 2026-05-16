@@ -4,8 +4,8 @@ import { SlScreenDesktop } from 'react-icons/sl'
 const Skills = () => {
   return (
     <div id='Habilidades' className='flex min-h-screen w-full flex-col
-    items-center justify-center gap-20 p-14 pt-10 pb-5 md:p-20 md:pt-10 lg:p-36 lg:pt-10 bg-background'>
-      <h1 className='text-center text-text text-5xl font-light'>Conocimientos técnicos y habilidades</h1>
+    items-center justify-center gap-20 p-14 pt-20 pb-5 md:p-20 md:pt-10 lg:p-36 lg:pt-10 bg-background'>
+      <h1 className='text-center text-text text-6xl'>Habilidades</h1>
 
       <div className="flex flex-wrap gap-0 md:flex-nowrap md:gap-10">
 

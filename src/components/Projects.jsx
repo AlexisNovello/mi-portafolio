@@ -3,9 +3,9 @@ import project1 from '../assets/project1.jpg'
 
 const Projects = () => {
   return (
-    <div id='Proyectos' className='h-auto w-full flex flex-col items-center
-    justify-center gap-20 p-14 md:p-30 md:pt-10 lg:p-50 lg:pt-10 lg:pb-20 bg-background'>
-      <h1 className='text-center text-text text-5xl'>Proyectos</h1>
+    <div id='Proyectos' className='min-h-screen w-full flex flex-col items-center
+    justify-center gap-20 pt-20 md:p-30 md:pt-10 lg:p-50 lg:pt-10 lg:pb-20 bg-background'>
+      <h1 className='text-center text-text text-6xl'>Proyectos</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-5">
 

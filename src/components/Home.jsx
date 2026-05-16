@@ -7,7 +7,7 @@ const Home = () => {
     <div id='Inicio' className='flex min-h-screen w-full items-center justify-center bg-background'>
 
       <div className="flex flex-col items-center justify-center
-      gap-8 p-5 pt-0 text-center">
+      gap-8 p-5 py-0 text-center">
         
         <div className="space-y-1 sm:space-y-3">
           <h1 className='bg-gradient-to-r from-gradient1 to-gradient2
