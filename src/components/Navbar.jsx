@@ -7,7 +7,7 @@ const Navbar = () => {
 
       {/*Desktop navbar */}
       <div className='min-h-screen top-0 hidden md:sticky md:flex
-      items-center justify-center bg-teal-600 text-white'>
+      items-center justify-center bg-navbar text-text'>
         <ul className='flex flex-col gap-10'>
           {["Inicio", "Habilidades", "Proyectos", "Contacto"].map((item) => (
             <li key={item} className='flex items-center justify-start
@@ -27,22 +27,22 @@ const Navbar = () => {
 
       {/*Movile navbar */}
       <div className='fixed left-0 right-0 top-0 z-10 flex justify-evenly
-      bg-teal-600 p-5 text-white md:hidden'>
-        <a href='#Home' className='flex flex-col items-center justify-center'>
+      bg-navbar p-5 text-text md:hidden'>
+        <a href='#Inicio' className='flex flex-col items-center justify-center hover:scale-110 transition-all'>
           <BiHome className='text-2xl' />
-          <span className='text-xs'>Home</span>
+          <span className='text-xs'>Inicio</span>
         </a>
-         <a href='#skills' className='flex flex-col items-center justify-center'>
+         <a href='#Habilidades' className='flex flex-col items-center justify-center hover:scale-110 transition-all'>
           <BiBriefcase className='text-2xl' />
-          <span className='text-xs'>Skills</span>
+          <span className='text-xs'>Habilidades</span>
         </a>
-         <a href='#projects' className='flex flex-col items-center justify-center'>
+         <a href='#Proyectos' className='flex flex-col items-center justify-center hover:scale-110 transition-all'>
           <BiCode className='text-2xl' />
-          <span className='text-xs'>Projects</span>
+          <span className='text-xs'>Proyectos</span>
         </a>
-         <a href='#contact' className='flex flex-col items-center justify-center'>
+         <a href='#Contacto' className='flex flex-col items-center justify-center hover:scale-110 transition-all'>
           <BiMailSend className='text-2xl' />
-          <span className='text-xs'>Contact</span>
+          <span className='text-xs'>Contacto</span>
         </a>
       </div>
     </div>

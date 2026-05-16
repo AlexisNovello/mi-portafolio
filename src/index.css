@@ -9,8 +9,19 @@
     width: 20px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(13, 148, 136);
+    background-color: #2870dc;
 }
 ::-webkit-scrollbar-track{
-    background: rgb(233, 233, 233);
+    background: #e5fafb;
+}
+
+@theme{
+    --color-background: #041316;
+    --color-navbar: #0d1b1d;
+    --color-text: #e5fafb;
+    --color-primary: #84e6eb;
+    --color-secondary: #19649a;
+    --color-accent: #2870dc;
+    --color-gradient1: #79d9e8;
+    --color-gradient2: #347fde;
 }
